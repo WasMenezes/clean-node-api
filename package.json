@@ -17,6 +17,9 @@
       "pre-commit": "lint-staged"
     }
   },
+  "standard": {
+    "env": ["jest"]
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
