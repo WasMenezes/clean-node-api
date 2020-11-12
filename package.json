@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watch --silent --verbose",
-    "test:staged":"jest --passWithNoTests --findRelatedTests --silent"
+    "test:staged":"jest --passWithNoTests --findRelatedTests --silent",
+    "test:ci": "jest --coverage"
 
   },
   "lint-staged": {
