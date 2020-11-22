@@ -5,16 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watch --silent --verbose",
-    "test:staged":"jest --passWithNoTests --findRelatedTests --silent",
+    "test:staged": "jest --passWithNoTests --findRelatedTests --silent",
     "test:ci": "jest --coverage --noStackTrace"
-
   },
   "lint-staged": {
     "*.js": [
       "standard --fix",
       "npm run test:staged",
-      "git add" 
-    ] 
+      "git add"
+    ]
   },
   "husky": {
     "hooks": {
@@ -22,7 +21,9 @@
     }
   },
   "standard": {
-    "env": ["jest"]
+    "env": [
+      "jest"
+    ]
   },
   "author": "",
   "license": "ISC",
@@ -31,5 +32,8 @@
     "jest": "^26.6.3",
     "lint-staged": "^10.5.1",
     "standard": "^16.0.1"
+  },
+  "dependencies": {
+    "validator": "^13.1.17"
   }
 }
